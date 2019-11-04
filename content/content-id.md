@@ -1,17 +1,17 @@
-Fourier transforms are a tool used in a whole bunch of different things. This is an explanation of what a Fourier transform does, and some different ways it can be useful. And how you can make pretty things with it, like this thing:
+Transformasi Fourier adalah teknik yang digunakan pada banyak hal. Ini adalah penjelasan apa itu transformasi Fourier, dan berbagai kegunaannya. Dan juga bagaimana dia bisa dipakai untuk membuat gambar cantik seperti ini:
 
 <canvas id="self-draw" class="sketch" width=500 height=500></canvas>
 
-I'm going to explain how that animation works, and along the way explain Fourier transforms!
+Saya akan menjelaskan cara kerja animasi di atas, sekaligus menjelaskan tenatng transformasi Fourier!
 
-By the end you should have a good idea about
-- What a Fourier transform does
-- Some practical uses of Fourier transforms
-- Some pointless but cool uses of Fourier transforms
+Setelah selesai membaca, kamu harusnya sudah bisa
+- Memahami apa itu transformasi Fourier
+- Mengetahui apa saja kegunaan praktikal dari transformasi Fourier
+- Tahu hal tidak penting tapi seru dari kegunaan transformasi Fourier
 
-We're going to leave the mathematics and equations out of it for now. There's a bunch of interesting maths behind it, but it's better to start with what it actually does, and why you'd want to use it first. If you want to know more about the how, there's some further reading suggestions below!
+Kita tidak akan membahas matematika dan persamaannya dulu. Ada beberapa hal menarik di sisi matematikanya, tapi akan lebih baik kalau kita mulai dengan apa sebenarnya transformasi Fourier itu, dan kenapa kamu mau menggunakannya. Kalau kamu mau mendalami lebih lanjut, ada daftar bacaan lanjutan di bagian bawah!
 
-## So what is this thing?
+## Jadi apa itu transformasi Fourier?
 
 Put simply, the Fourier transform is a way of splitting something up into a bunch of sine waves. As usual, the name comes from some person who lived a long time ago called Fourier.
 
