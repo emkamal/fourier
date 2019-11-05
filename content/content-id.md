@@ -13,23 +13,23 @@ Kita tidak akan membahas matematika dan persamaannya dulu. Ada beberapa hal mena
 
 ## Jadi apa itu transformasi Fourier?
 
-Put simply, the Fourier transform is a way of splitting something up into a bunch of sine waves. As usual, the name comes from some person who lived a long time ago called Fourier.
+Sederhananya, transformasi Fourier adalah cara untuk memecah sesuatu ke dalam beberapa gelombang sinus. Seperti biasa, nama metode ini datang dari seseorang yang hidup di masa lalu dengan nama Fourier.
 
-Let’s start with some simple examples and work our way up. First up we're going to look at waves - patterns that repeat over time.
+Mari kita mulai dengan contoh sederhana, kemudian pelan-pelan kita lanjut ke contoh yang lebih kompleks. Pertama, mari kita lihat gelombang, pola yang berulang setiap waktu.
 
-Here’s an example wave:
+Ini contoh gelombang:
 
 <canvas id="combo-sine-wave" class="sketch" width=500 height=300></canvas>
 
-This wavy pattern here can be split up into sine waves. That is, when we add up the two sine waves we get back the original wave.
+Pola gelombang ini bisa dipecah ke dalam beberapa gelombang sinus. Dalam hal ini kita bisa pecah jadi dua gelombang sinus. Kalau gelombang sinus pertama kita tambahkan dengan gelombang sinus kedua, kita dapat gelombang yang asli.
 
 <canvas id="combo-sine-wave-split" class="sketch" width=500 height=500></canvas>
 
-The Fourier transform is a way for us to take the combined wave, and get each of the sine waves back out. In this example, you can almost do it in your head, just by looking at the original wave.
+Transformasi Fourier adalah cara buat kita mengambil gelombang kombinasi, dan mendapat masing-masing gelombang sinus dari sana. Pada contoh ini, kamu bisa membayangkan sendiri di otak kamu, hanya dengan melihat gelombang asal.
 
-Why? Turns out a lot of things in the real world interact based on these sine waves. We usually call them the wave's frequencies.
+Kenapa? Ternyata banyak hal di dunia nyata yang berinteraksi berdasarkan gelombang-gelombang sinus ini. Kita biasa menyebutnya frekuensi gelombang.
 
-The most obvious example is sound – when we hear a sound, we don’t hear that squiggly line, but we hear the different frequencies of the sine waves that make up the sound.
+Contoh paling jelas adalah suara – ketika kita mendengar suara, kita bukan mendengarkan garis-garis gelombang itu, yang kita dengar adalah frekuensi-frekuensi berbeda dari gelombang sinus yang menjadi komponen dari suara tersebut.
 
 <button id="together-button" class="button">Play Full Wave</button>
 
