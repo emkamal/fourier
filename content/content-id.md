@@ -31,38 +31,38 @@ Kenapa? Ternyata banyak hal di dunia nyata yang berinteraksi berdasarkan gelomba
 
 Contoh paling jelas adalah suara – ketika kita mendengar suara, kita bukan mendengarkan garis-garis gelombang itu, yang kita dengar adalah frekuensi-frekuensi berbeda dari gelombang sinus yang menjadi komponen dari suara tersebut.
 
-<button id="together-button" class="button">Play Full Wave</button>
+<button id="together-button" class="button">Dengar sinyal utuh</button>
 
-<button id="split-button-1" class="button">Play High Frequency</button>
+<button id="split-button-1" class="button">dengar frekuensi tinggi</button>
 
-<button id="split-button-2" class="button">Play Low Frequency</button>
+<button id="split-button-2" class="button">Dengar frekuensi rendah</button>
 
-Being able to split them up on a computer can give us an understanding of what a person actually hears. We can understand how high or low a sound is, or figure out what note it is.
+Dengan membagi sinyal tersebut di komputer, kita bisa tahu suara apa yang di dengar oleh seseorang.Kita bisa tahu seberapa tinggi atau rendah sebuah suara, atau kita juga bisa tahu tangga nada dari suara tersebut.
 
-We can also use this process on waves that don't look like they're made of sine waves.
+Kita juga bisa menggunakan proses ini pada gelombang yang tidak terlihat seperti terbuat dari gelombang sinus.
 
-Let's take a look at this guy. It’s called a square wave.
+Mari kita coba lihat gelombang yang satu ini. Namanya gelombang kotak.
 
 <canvas id="square-wave" class="sketch" width=500 height=300></canvas>
 
-It might not look like it, but it also can be split up into sine waves.
+Agak sulit membayangkannya, tapi gelombang kotak ini juga bisa dipecah kedalam gelmabng-gelombang sinus.
 
 <canvas id="square-wave-split" class="sketch" width=500 height=500></canvas>
 
-We need a lot of them this time – technically an infinite amount to perfectly represent it. As we add up more and more sine waves the pattern gets closer and closer to the square wave we started with.
+Kita butuh banyak kali ini – secara teknis, kita butuh gelombang sinus sebanyak tak-hingga agar dapat secara sempurna merepresentasikannya. Semakin kita tambah gelombang sinusnya, polanya akan semakin mendekat gelombang kotak kita tadi.
 
 <canvas id="square-wave-build-up" class="sketch" width=500 height=500></canvas>
 <input id="square-wave-build-up-slider" type="range" min="0" max="1" value="0" step="any" >
 
-<button id="square-wave-button" class="button">Play Wave</button>
+<button id="square-wave-button" class="button">Dengar suara gelombangnya</button>
 
-*Drag the slider above to play with how many sine waves there are.*
+*Geser slider di atas untuk mengatur jumlah gelombang sinusnya.*
 
-Visually, you'll notice that actually the first few sine waves are the ones that make the biggest difference. With the slider halfway, we have the general shape of the wave, but it's all wiggly. We just need the rest of the small ones to make the wigglyness flatten out.
+Secara visual, kamu akan tahu bahwa yang paling berpengaruh sebenarnya adalah beberapa gelombang sinus pertama. Dengan slider berada di tengah, kita secara umum sudah mendapat bentuk gelombang yang kita inginkan, walaupun tidak halus. Kita cuma butuh sisa gelombang sinus lainnya untuk menghaluskan gelombangnya.
 
-When you listen to the wave, you'll hear the sound get lower, because we're removing the higher frequencies.
+Ketika kamu mendengar gelombangnya, suaranya akan semakin rendah, karena kita menghapus frekuensi-frekuensi yang tinggi.
 
-This process works like that for any repeating line. Give it a go, try drawing your own!
+Proses ini berlaku sama untuk setiap garis yang berulang. Silakan coba gambar sinyalmu sendiri!
 
 <div class="multi-container">
 <div class="sketch" >
