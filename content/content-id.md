@@ -67,34 +67,34 @@ Proses ini berlaku sama untuk setiap garis yang berulang. Silakan coba gambar si
 <div class="multi-container">
 <div class="sketch" >
     <canvas id="wave-draw" class="sketch-child" width=500 height=300></canvas>
-    <p id="wave-draw-instruction" class="instruction wave-instruction">Draw here!</p>
+    <p id="wave-draw-instruction" class="instruction wave-instruction">Gambar disini!</p>
 </div>
 <canvas id="wave-draw-split" class="sketch" width=500 height=500></canvas>
 </div>
 <input id="wave-draw-slider" type="range" min="0" max="1" value="1" step="any">
-<button id="wave-draw-button" class="button">Play Wave</button>
+<button id="wave-draw-button" class="button">Dengar Sinyal</button>
 
-*Move the slider to see how as we add more sine waves, it gets closer and closer to your drawing*
+*Geser slider untuk melihat bagaimana penambahan gelombang sinus membuatnya semakin dekat ke gambar kamu*
 
-Again, aside from the extra wigglyness, the wave looks pretty similar with just half of the sine waves.
+Lagi-lagi, disamping masalah ketidakhalusan, gelombangnya sudah cukup mirip hanya dengan setengah dari gelombang-gelombang sinus tersebut.
 
-We can actually use the fact that the wave is pretty similar to our advantage. By using a Fourier transform, we can get the important parts of a sound, and only store those to end up with something that's pretty close to the original sound.
+Kita bisa memanfaatkan fenomena ini. Dengan menggunakan transformasi Fourier, kita bisa mengambil bagian yang penting dari sebuah sinyal suara, dan hanya menyimpan gelombang sinus secukupnya agar kita bisa mendapatkan suara yang sudah cukup mirip.
 
-Normally on a computer we store a wave as a series of points.
+Biasanya, di komputer kita menyimpan gelombang sebagai daftar titik-titik.
 
 <canvas id="wave-samples" class="sketch" width=500 height=500></canvas>
 
-What we can do instead is represent it as a bunch of sine waves. Then we can compress the sound by ignoring the smaller frequencies. Our end result won't be the same, but it'll sound pretty similar to a person.
+alih-alih, kita bisa menyimpannya dalam bentuk beberapa gelombang sinus. Lalu kita kompres suaranya dengan mengabaikan frekuensi-frekuensi yang kecil. Hasil akhirnya pasti berbeda, tapi akan terdengar sama di telinga manusia.
 
 <canvas id="wave-frequencies" class="sketch" width=500 height=500></canvas>
 
-This is essentially what MP3s do, except they're more clever about which frequencies they keep and which ones they throw away.
+Pada dasarnya inilah yang dilakukan MP3, tapi mereka lebih cerdas dalam hal memilih frekuensi mana yang disimpan dan mana yang dibuang.
 
-So in this case, we can use Fourier transforms to get an understanding of the fundamental properties of a wave, and then we can use that for things like compression.
+Jadi dalam hal ini kita bisa menggunakan transformasi Fourier untuk memahami properti dasar dari sebuah gelombang,  dan kita bisa menggunakannya untuk hal berguna seperti kompresi data.
 
-Ok, now let's dig more into the Fourier transform. This next part looks cool, but also gives you a bit more understanding of what the Fourier transform does. But mostly looks cool.
+Ok, sekarang mari kita gali lebih dalam tentang transformasi Fourier. Bagian selanjutnya ini terlihat keren, tapi juga akan membuat kamu lebih paham lagi tentang transformasi Fourier. Tapi intinya keren deh.
 
-## Epicycles
+## Episiklus
 
 Now at the start, I said it splits things into sine waves. The thing is, the sine waves it creates are not just regular sine waves, but they’re 3D. You could call them "complex sinusoids". Or just "spirals".
 
