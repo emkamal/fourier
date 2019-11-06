@@ -96,52 +96,52 @@ Ok, sekarang mari kita gali lebih dalam tentang transformasi Fourier. Bagian sel
 
 ## Episiklus
 
-Now at the start, I said it splits things into sine waves. The thing is, the sine waves it creates are not just regular sine waves, but they’re 3D. You could call them "complex sinusoids". Or just "spirals".
+Di awal, disebutkan bahwa transformasi Fourier memecah sesuatu ke dalam beberapa gelombang sinus. Menariknya, gelombang sinus yang dihasilkan disini bukan gelombang sinus biasa, mereka adalah gelombang sinus 3 dimensi. Kamu bisa menyebutnya "sinusoid kompleks". Atau cukup "spiral".
 
 <canvas id="complex-sinusoid" class="sketch" width=500 height=500></canvas>
 
-If we take a look from the side, they look like sine waves. From front on, though, these look like circles.
+Kalau kita lihat dari samping, mereka terlihat seperti gelombang sinus. Tapi dari depan, mereka terlihat seperti lingkaran.
 
 <canvas id="complex-sinusoid-turn" class="sketch" width=500 height=500></canvas>
 
-So far everything we’ve been doing has only required the regular 2D sine waves. When we do a Fourier transform on 2D waves, the complex parts cancel out so we just end up with sine waves.
+Sejauh ini kita masih hanya bermain-main dengan gelombang sinus 2 dimensi. Saat kita melakukan transformasi Fourier pada gelombang 2D, bagian kompleksnya tereliminasi sehingga kita hanya mendapat gelombang sinus sederhana.
 
-But we can use the 3D sine waves to make something fun looking like this:
+Tapi kita bisa menggunakan gelombang sinus 3D untuk membuat sesuatu yang menarik seperti ini:
 
 <canvas id="peace-epicycles" class="sketch" width=500 height=500></canvas>
 
-What’s going on here?
+Ada apa disini?
 
-Well, we can think of the drawing as a 3D shape because of the way it moves around in time. If you imagine the hand being drawn by a person, the three dimensions represent where the tip of their pencil is at that moment. The x and y dimensions tell us the position, and then the time dimension is the time at that moment.
+Kita bisa melihat gambarnya sebagai sebuah bentuk 3 dimensi karena dia bergerak seiring waktu. Kalau kamu membayangkan tangannya digambar oleh seseorang, ketiga dimensinya merepresentasikan ujung pensil si penggambar pada momen tersebut. Dimensi x dan y menunjukkan posisi, dan lalu dimensi ketiga adalah waktu pada momen tersebut.
 
 <canvas id="peace-3d" class="sketch" width=500 height=500></canvas>
 
-Now that we have a 3D pattern, we can't use the regular 2D sine waves to represent it. No matter how many of the 2D sine waves we add up, we'll never get something 3D. So we need something else.
+Sekarang kita punya pola 3 dimensi, kita tidak bisa lagi menggunakan gelombang sinus 2 dimensi biasa untuk merepresentasikannya. Tidak peduli berapa banyak pun gelombang sinus 2 dimensi yang kita tambahkan, kita tidak akan bisa mendapatkan sesuatu dengan 3 dimensi. Jadi kita butuh hal lain.
 
-What we can use is the 3D spiral sine waves from before. If we add up lots of those, we can get something that looks like our 3D pattern.
+Yang bisa kita gunakan adalah gelombang sinus spiral 3 dimensi yang kita sebutkan sebelumnya. Jika kita tambahkan banyak gelombang sinus spiral 3 dimensi, kita bisa mendapatkan sesuatu yang terlihat seperti pola 3 dimensi kita.
 
-Remember, these waves look like circles when we look at them from front on. The name for the pattern of a circle moving around another circle is an epicycle.
+Ingat, gelombang-gelombang ini terlihat seperti lingkaran ketika kita melihatnya dari arah depan. Nama pola dimana sebuah lingkarang bergerak di sekitar lingkaran lainnya adalah episiklus.
 
 <canvas id="peace-build-up" class="sketch" width=500 height=500></canvas>
 <input id="peace-build-up-slider" type="range" min="0" max="1" value="1" step="any">
 
-*Use the slider above to control how many circles there are.*
+*Geser slider diatas untuk mengatur jumlah lingkaran yang ada.*
 
-Like before, we get a pretty good approximation of our pattern with just a few circles. Because this is a fairly simple shape, all the last ones do is make the edges a little sharper.
+Seperti sebelumnya, kita bisa mendapatkan pola yang sudah mendekati pola yang kita inginkan hanya dengan beberapa lingkaran. Karena bentuk ini adalah bentuk yang cukup sederhana, lingkaran-lingkaran terakhir berfungsi untuk menajamkan gars-garisnya.
 
-All this applies to any drawing, really! Now it’s your chance to play around with it.
+Semua ini bisa digunakan untuk gambar apapun, beneran! Silakan coba sendiri.
 
 <div class="multi-container">
 <div class="sketch" >
     <canvas id="draw-zone" class="sketch-child" width=500 height=500></canvas>
-    <p id="draw-zone-instruction" class="instruction">Draw here!</p>
+    <p id="draw-zone-instruction" class="instruction">Gambar disini!</p>
     <button id="draw-zone-undo-button" class="button embedded-button">Undo</button>
 </div>
 <canvas id="circle-zone" class="sketch" width=500 height=500></canvas>
 </div>
 <input id="circle-zone-slider" type="range" min="0" max="1" value="1" step="any">
 
-*Use the slider to control how many circles are used for your drawing*
+*Pakai slider untuk mengatur jumlah lingkaran yang dipakai untuk memggambar*
 
 Again, you'll see for most shapes, we can approximate them fairly well with just a small number of circles, instead of saving all the points.
 
