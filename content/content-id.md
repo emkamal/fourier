@@ -143,13 +143,13 @@ Semua ini bisa digunakan untuk gambar apapun, beneran! Silakan coba sendiri.
 
 *Pakai slider untuk mengatur jumlah lingkaran yang dipakai untuk memggambar*
 
-Again, you'll see for most shapes, we can approximate them fairly well with just a small number of circles, instead of saving all the points.
+Lagi-lagi, kita bisa lihat bahwa untuk kebanyakan bentuk, kita bisa membuat yang cukup mirip hanya dengan jumlah lingkaran yang sedikit, alih-alih harus menyimpang semua titik.
 
-Can we use this for real data? Well, we could! In reality we have another data format called SVG, which probably does a better job for the types of shapes we tend to create. So for the moment, this is really just for making cool little gifs.
+Bisakah kita menggunakan ini pada data riil? Tentu bisa! Tapi untuk ini kita sudah punya format data yang bernama SVG, yang mungkin bisa lebih efisies untuk bentuk gambar yang pada umumnya kita buat. Jadi untuk saat ini, teknik menggambar dengan transformasi Fourier ini hanya untuk lucu-lucuan saja.
 
 <canvas id="fourier-title" class="sketch" width=500 height=300></canvas>
 
-There is another type of visual data that does use Fourier transforms, however.
+Tapi ada lagi loh tipe data visual lain yang menggunakan tranformasi Fourier.
 
 ## JPEGs
 
